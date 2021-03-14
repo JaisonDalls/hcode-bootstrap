@@ -1,0 +1,25 @@
+header{
+    background-color: #f75320;
+    min-height: 25px;
+    padding: 1rem;
+}
+
+section nav{
+    background-color: #ededed;
+    padding:2rem;
+}
+
+footer{
+    background-color: #454545;
+    padding:1rem;
+}
+
+@media (min-width: 576px) {
+    section,
+    section > .row,
+    section > .row > [class^="col-"],
+    section > .row  nav {
+        height: calc(100vh - 306px);
+    }
+}
+
