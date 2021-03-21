@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/example.css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="alert   alert-info" role="alert">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt similique eveniet numquam voluptatibus, fugiat quia error dolorum vel odio saepe quo dolorem odit aperiam ipsam fuga cupiditate? Ut, quidem obcaecati.
+                    </div>  
+                </div>                
+            </div><!--row-->
+            <div class="row">
+                <div class="col">
+                    <div class="alert alert-secondary   alert-info" role="alert">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt similique eveniet numquam voluptatibus, fugiat quia error dolorum vel odio saepe quo dolorem odit aperiam ipsam fuga cupiditate? Ut, quidem obcaecati.
+                    </div>  
+                </div>
+                <div class="col">
+                    <div class="alert alert-danger  alert-info" role="alert">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt similique eveniet numquam voluptatibus, fugiat quia error dolorum vel odio saepe quo dolorem odit aperiam ipsam fuga cupiditate? Ut, quidem obcaecati.
+                    </div>  
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="alert alert-dark" role="alert">
+                        <h4>Como saber mais?</h4>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit doloribus nostrum, asperiores consequatur harum optio nihil voluptatem tempora architecto quidem blanditiis illum, saepe cum suscipit ea cumque eaque veniam nisi.</p>
+                        <hr>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat quibusdam reiciendis, exercitationem dolores sit cupiditate numquam doloribus ipsa fugiat. Perferendis aliquid consequuntur quis similique excepturi, molestiae quia iure amet beatae.</p>
+                    </div>  
+                </div>
+            </div>
+            <div class="col">
+                <div class="alert alert-success alert-dismissible fade show" role="alert">
+                    <h4>Como saber mais?</h4>
+                    <button class="close" 
+                        data-dismiss="alert" 
+                        aria-label="close">
+                        <span aria-hidden="true">&times;</span> 
+                    </button>
+                </div>  
+            </div>
+        </div>
+        <button id="btn-close-all" type="button">
+            Fechar todos os alertas
+        </button>
+        </div><!--container-->
+    </main>
+    
+
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        $(()=> {
+            $('#btn-close-all').on('click', e=>{
+                $('.alert').alert('close');
+            });
+
+        });
+    </script>
+</body>
+</html>

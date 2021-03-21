@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/example.css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <h1>Hcode Treinamentos <span class="badge badge-primary" >Novo</span></h1>
+            <h2>Hcode Treinamentos <span class="badge badge-secondary" >Novo</span></h2>
+            <h3>Hcode Treinamentos <span class="badge badge-danger" >Novo</span></h3>
+            <h4>Hcode Treinamentos <span class="badge badge-light" >Novo</span></h4>
+            <h5>Hcode Treinamentos <span class="badge badge-warning" >Novo</span></h5>
+            <h6>Hcode Treinamentos <span class="badge badge-success" >Novo</span></h6>
+            <hr>
+            <button type="button" class="btn btn-primary">Clique aqui <span class="badge badge-dark">Olha o botão</span></button>
+            <hr>
+            <button type="button" class="btn btn-primary">
+                Caixa de Entrada <span class="badge badge-light">5</span>
+                <span class="sr-only">Há 5 mensagens não lidas na sua caixa de entrada de e-mails.</span>
+            </button>
+            <hr>
+            <span class="badge badge-primary">1</span>
+            <span class="badge badge-primary">2</span>
+            <span class="badge badge-primary">3</span>
+            <span class="badge badge-primary">4</span>
+            <span class="badge badge-primary">5</span>
+            <span class="badge badge-primary">6</span>
+            <span class="badge badge-primary">7</span>
+            <span class="badge badge-primary">8</span>
+        
+        </div><!--container-->
+    </main>
+    
+
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        $(()=>{
+            $('#btn_click').on('click', e =>{
+                $('#btn-auto-save').button('toggle');
+            });
+        });
+    </script>
+</body>
+</html>
