@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/example.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="dropdown">
+            <button type="button" data-toggle="dropdown" class="btn btn-primary btn-sm dropdown-toggle">Menu</button>
+            <div class="dropdown-menu">
+                <a href="#" class="dropdown-item">1</a>
+                <a href="#" class="dropdown-item">2</a>
+                <a href="#" class="dropdown-item">3</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button type="button" data-toggle="dropdown" class="btn btn-primary dropdown-toggle">Menu</button>
+            <div class="dropdown-menu">
+                <a href="#" class="dropdown-item">1</a>
+                <a href="#" class="dropdown-item">2</a>
+                <a href="#" class="dropdown-item">3</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button type="button" data-toggle="dropdown" class="btn btn-primary btn-lg dropdown-toggle">Menu</button>
+            <div class="dropdown-menu">
+                <a href="#" class="dropdown-item">1</a>
+                <a href="#" class="dropdown-item">2</a>
+                <a href="#" class="dropdown-item">3</a>
+            </div>
+        </div>
+    </div>
+    
+    
+
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        $(()=>{
+            $('#btn_click').on('click', e =>{
+                $('#btn-auto-save').button('toggle');
+            });
+        });
+    </script>
+</body>
+</html>

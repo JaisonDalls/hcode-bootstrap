@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/example.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="container">    
+        <div class="row">
+            <div class="col-2">
+                <div class="dropdown dropup">
+                    <h3>Drop Up</h3>
+                    <button type="button" data-toggle="dropdown" class="btn btn-primary btn-lg dropdown-toggle">Menu</button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item-text">Alimentos</span>
+                        <a href="#" class="dropdown-item">Bebidas </a>
+                        <a href="#" class="dropdown-item">2</a>
+                        <a href="#" class="dropdown-item">3</a>
+                    </div>
+                </div> 
+            </div>
+            <div class="col-2">
+                <div class="dropdown dropleft" >
+                    <h3>Drop Left</h3>
+                    <button type="button" data-toggle="dropdown" class="btn btn-primary btn-lg dropdown-toggle">Menu</button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item-text">Alimentos</span>
+                        <a href="#" class="dropdown-item">Bebidas </a>
+                        <a href="#" class="dropdown-item">2</a>
+                        <a href="#" class="dropdown-item">3</a>
+                    </div>
+                </div>  
+            </div>
+            <div class="col-2">
+                <div class="dropdown dropright" >
+                    <h3>Drop Right</h3>
+                    <button type="button" data-toggle="dropdown" class="btn btn-primary btn-lg dropdown-toggle">Menu</button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item-text">Alimentos</span>
+                        <a href="#" class="dropdown-item">Bebidas </a>
+                        <a href="#" class="dropdown-item">2</a>
+                        <a href="#" class="dropdown-item">3</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="dropdown dropbottom" >
+                    <h3>Drop Buttom</h3>
+                    <button type="button" data-toggle="dropdown" class="btn btn-primary btn-lg dropdown-toggle">Menu</button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item-text">Alimentos</span>
+                        <a href="#" class="dropdown-item">Bebidas </a>
+                        <a href="#" class="dropdown-item">2</a>
+                        <a href="#" class="dropdown-item">3</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        $(()=>{
+            $('#btn_click').on('click', e =>{
+                $('#btn-auto-save').button('toggle');
+            });
+        });
+    </script>
+</body>
+</html>
