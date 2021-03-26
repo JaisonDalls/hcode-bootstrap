@@ -10,17 +10,16 @@
 </head>
 <body>    
     <div class="container">   
-        <div class="row">
-            <div class="col">
-                <input type="text" name="text01" id="text01" placeholder="Primeiro nome" class="form-control">
-                <small class="text-muted">Digite sem abreviações</small>
-            </div>
-            <div class="col">
-                <input type="text" name="text02" id="text02" placeholder="Segundo nome" class="form-control">
-            </div>
-        </div>    
-    </div>
+        <form class="form-inline">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email " class="form-control mr-2 mb-2">
 
+            <label for="password">password</label>
+            <input type="password" name="password" id="password " class="form-control mr-2 mb-2">
+
+            <button type="submit" class="btn btn-primary mr-2 mb-2 ">Enviar</button>
+        </form>
+      
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
