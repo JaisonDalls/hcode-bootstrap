@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    
+    <title>Tabs</title>
+</head>
+<body>  
+    <div class="container">
+        <nav class="nav nav-tabs">
+            <a href="#tab-1" class="nav-link" data-toggle="tab">Home</a>
+            <a href="#tab-2" class="nav-link" data-toggle="tab">Cursos</a>
+            <a href="#tab-3" class="nav-link" data-toggle="tab">Bootstrap</a>
+         </nav>
+
+         <div class="tab-content">
+             <div class="tab-pane active" id="tab-1">Conteúdo 1</div>
+             <div class="tab-pane" id="tab-2">Conteúdo 2</div>
+             <div class="tab-pane" id="tab-3">Conteúdo 3</div>
+         </div>
+
+         <hr>
+
+         <nav class="nav nav-pills">
+            <a href="#aba-1" class="nav-link" data-toggle="tab">Home</a>
+            <a href="#aba-2" class="nav-link" data-toggle="tab">Cursos</a>
+            <a href="#aba-3" class="nav-link" data-toggle="tab">Bootstrap</a>
+         </nav>
+
+         <div class="tab-content">
+             <div class="tab-pane active" id="aba-1">Conteúdo 1</div>
+             <div class="tab-pane" id="aba-2">Conteúdo 2</div>
+             <div class="tab-pane" id="aba-3">Conteúdo 3</div>
+         </div>
+
+         <div class="row">
+             <div class="col-4">
+                <nav class="nav nav-pills">
+                    <a href="#aba2-1" class="nav-link" data-toggle="tab">Home</a>
+                    <a href="#aba2-2" class="nav-link" data-toggle="tab">Cursos</a>
+                    <a href="#aba2-3" class="nav-link" data-toggle="tab">Bootstrap</a>
+                 </nav>
+             </div>
+             <div class="col-8">
+                <div class="tab-content">
+                    <div class="tab-pane active fade show" id="aba2-1">Conteúdo 1</div>
+                    <div class="tab-pane fade" id="aba2-2">Conteúdo 2</div>
+                    <div class="tab-pane fade" id="aba2-3">Conteúdo 3</div>
+                </div>      
+             </div>
+         </div>
+
+         <hr>
+
+         <button class="btn btn-dark" type="button" id="btn-1">Aba Home</button>
+         <button class="btn btn-dark" type="button" id="btn-2">Aba Cursos</button>
+         <button class="btn btn-dark" type="button" id="btn-3">Aba Bootstrap</button>
+    </div>   
+    
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+    <script>
+        $(() =>{
+            $('#btn-1').on('click', e =>{
+                $('[href="#aba2-1"]').tab('show');
+            });
+            $('#btn-2').on('click', e =>{
+                $('[href="#aba2-2"]').tab('show');
+            });
+            $('#btn-3').on('click', e =>{
+                $('[href="#aba2-3"]').tab('show');
+            });
+        });
+    </script>
+</body>
+</html>
