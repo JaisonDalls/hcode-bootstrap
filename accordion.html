@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <title>Accordion</title>
+</head>
+<body>  
+    <div class="container-fluid" >
+        <div class="accordion " id="accordion">
+            <div class="card-group col-12">
+                <div class="card ">
+                    <div class="card-header">
+                        <button class="btn btn-link btn-block" type="button" data-toggle="collapse" data-target="#a">A</button>
+                    </div>
+                    <div id="a" class="collapse show" data-parent="#accordion">
+                        <div class="card-body">
+                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur culpa iusto nesciunt cumque voluptatem quo placeat exercitationem odio totam distinctio, eaque saepe quod. Harum, eligendi quis reiciendis officiis tempore fugiat.</p>
+                        </div>
+                        <div class="card-footer">
+                            <small>Atualizado em 30/03/2021</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="card ">
+                    <div class="card-header">
+                        <button class="btn btn-link btn-block" type="button" data-toggle="collapse" data-target="#b">B</button>
+                    </div>
+                    <div id="b" class="collapse " data-parent="#accordion">
+                        <div class="card-body">
+                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur culpa iusto nesciunt cumque voluptatem quo placeat exercitationem odio totam distinctio, eaque saepe quod. Harum, eligendi quis reiciendis officiis tempore fugiat.</p>
+                        </div>
+                        <div class="card-footer">
+                            <small>Atualizado em 30/03/2021</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="card ">
+                    <div class="card-header">
+                        <button class="btn btn-link btn-block" type="button" data-toggle="collapse" data-target="#c">C</button>
+                    </div>
+                    <div id="c" class="collapse " data-parent="#accordion">
+                        <div class="card-body">
+                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur culpa iusto nesciunt cumque voluptatem quo placeat exercitationem odio totam distinctio, eaque saepe quod. Harum, eligendi quis reiciendis officiis tempore fugiat.</p>
+                        </div>
+                        <div class="card-footer">
+                            <small>Atualizado em 30/03/2021</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+</body>
+</html>

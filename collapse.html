@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/desafio03.css">
+    <title>Collapse</title>
+</head>
+<body>  
+    <div class="container p-3" >
+        <button type="button" class="btn btn-success mb-2" data-toggle="collapse" data-target="#content">Abrir</button>
+        <a href="#" class="btn btn-danger mb-2" data-toggle="collapse" data-target="#content">Fechar</a>
+
+        <div id="content" class="col-6 collapse fade">
+            <h4>Título do conteúdo</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas magnam omnis fugiat tempora iure illum numquam non officia quis qui commodi esse incidunt, ipsam, eum nisi corrupti distinctio deleniti laborum.</p>
+        </div>
+    </div>
+    
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+</body>
+</html>
