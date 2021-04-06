@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <title>Navbar</title>
+</head>
+<body>     
+    <div class="container-fluid">
+        <button type="button" class="btn btn-primary btn-lg" data-toggle="popover" data-content="Conteúdo do Popover.">Mostrar Popover</button> 
+        
+        <hr>
+
+        <button type="button" title="Popover" class="btn btn-primary btn-lg" data-toggle="popover" data-content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt natus sit accusantium voluptatibus est laboriosam illo molestias.">Mostrar Popover</button>  
+        
+        <hr>
+        <div class="row ">
+            <div class="col">                <button type="button" title="Popover" class="btn btn-primary btn-lg" data-toggle="popover" data-content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt natus sit accusantium voluptatibus est laboriosam illo molestias." data-trigger="hover" data-placement="left">Mostrar Popover</button> 
+            </div>           
+        </div>
+    </div>
+    
+    
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+    <script>
+        $(()=>{
+
+            $('[data-toggle="popover"]').popover();
+
+        });
+    </script>
+</body>
+</html>

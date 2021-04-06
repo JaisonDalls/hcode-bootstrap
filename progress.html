@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <title>Progress</title>
+</head>
+<body>  
+    <div class="container-fluid">
+        <div class="row ">
+            <div class="col">
+                <h5>Estrutura básica do Progress </h5>  
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar"></div>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row ">
+            <div class="col">
+                <h5>Carregando 25%</h5>  
+                <div class="progress">
+                    <div class="progress-bar w-25" role="progressbar">25%</div>
+                </div>
+            </div>
+        </div>
+
+        
+        <hr>
+
+        <div class="row ">
+            <div class="col">
+                <h5>Via JavaScript para crescimento gradual da barra.</h5>  
+                <div id="progress" class="progress">
+                    <div class="progress-bar " role="progressbar" style="width: 1%"></div>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row ">
+            <div class="col">
+                <h5>Mudando a cor da barra.</h5>  
+                <div id="progress" class="progress">
+                    <div class="progress-bar bg-secondary" role="progressbar" style="width: 1%"></div>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row ">
+            <div class="col">
+                <h5>Mudando a altura da barra.</h5>  
+                <div id="progress" class="progress" style="height:2px">
+                    <div class="progress-bar bg-secondary" role="progressbar" style="width: 1%"></div>
+                </div>
+            </div>
+        </div>
+
+        
+        <hr>
+
+        <div class="row ">
+            <div class="col">
+                <h5>Usando decoração striped.</h5>  
+                <div id="progress" class="progress">
+                    <div class="progress-bar progress-bar-striped bg-secondary" role="progressbar" style="width: 1%"></div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <hr>
+
+        <div class="row ">
+            <div class="col">
+                <h5>Usando decoração animated.</h5>  
+                <div id="progress" class="progress">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-secondary" role="progressbar" style="width: 1%"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+    <script>
+        $(()=>{
+
+            window.progressInterval = setInterval(()=>{
+                let progress =  $('#progress .progress-bar').css('width').replace('%','');
+                progress = parseInt(progress) +1;
+
+                if (progress >= 100) {
+                    clearInterval(progressInterval);
+                }
+
+                $('#progress .progress-bar').css('width',progress + '%');
+
+            },2000);
+
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <title>Scrollspy</title>
+    <style>
+        #scrollspy-content{
+            position: relative;
+            height: calc(100vh - 120px);
+            overflow-y: auto;
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>  
+    <div class="container-fluid">
+        
+        <nav id="navbar" class="navbar navbar-light bg-light">
+            <a href="#" class="navbar-brand">Hcode</a> 
+            <ul class="nav nav-pills">
+                <li class="nav-item">
+                    <a href="#First" class="nav-link">First</a>   
+                </li>
+                <li class="nav-item">
+                    <a href="#Second" class="nav-link">Second</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#Third" class="nav-link">Third</a>
+                </li>
+            </ul>  
+        </nav>
+
+        <div id="scrollspy-content" data-spy="scroll" data-target="navbar" data-offset="0">
+            <h1 id="First">Content Title 01</h1>   
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus quod quos sit quae aut. Porro libero reprehenderit voluptas, voluptatibus inventore et odio adipisci, nulla sapiente iure rem totam est similique.</p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum dolor obcaecati ullam id dignissimos illo sed, exercitationem voluptatibus eveniet dolorem, nam nobis ad optio natus nesciunt distinctio? Ipsa, voluptates quia.
+
+            <h1 id="Second">Content Title 02</h1>   
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus quod quos sit quae aut. Porro libero reprehenderit voluptas, voluptatibus inventore et odio adipisci, nulla sapiente iure rem totam est similique.</p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum dolor obcaecati ullam id dignissimos illo sed, exercitationem voluptatibus eveniet dolorem, nam nobis ad optio natus nesciunt distinctio? Ipsa, voluptates quia.
+
+            <h1 id="Third">Content Title 03</h1>   
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus quod quos sit quae aut. Porro libero reprehenderit voluptas, voluptatibus inventore et odio adipisci, nulla sapiente iure rem totam est similique.</p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum dolor obcaecati ullam id dignissimos illo sed, exercitationem voluptatibus eveniet dolorem, nam nobis ad optio natus nesciunt distinctio? Ipsa, voluptates quia.
+        </div>
+
+    </div>
+    
+    
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+    <script>
+        $(()=>{
+
+           
+
+        });
+    </script>
+</body>
+</html>
